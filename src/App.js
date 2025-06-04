@@ -5,7 +5,7 @@ import GameRoom from "./GameRoom";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/tictactoe-client">
       <Routes>
         <Route path="/" element={<Lobby />} />
         <Route path="/game/:roomName" element={<GameRoom />} />
